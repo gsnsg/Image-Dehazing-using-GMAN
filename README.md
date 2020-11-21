@@ -11,6 +11,35 @@ PyTorch implementation of <b>Single Image Dehazing with a Generic Model-Agnostic
 <img src="demo_5.png"/>
 
 
+<h2> Steps to use the trained model </h2>
+<ol>
+   <li>Download the state_dict_model.pt </li>
+   <li>Copy the code for model from the notebook </li>
+   <li>Create a model object and load the model from the downloaded weights</li>
+</ol>
+
+<h2>Code</h2>
+
+```
+import torch
+
+class GMAN(nn.Module):
+    model code ....
+    
+
+
+PATH_TO_MODEL = '../../state_dict_model.pt'
+    
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+gman_net = GMAN().to(device)
+if if torch.cuda.is_available():
+    gman_net.load_state_dict(torch.load(PATH_TO_MODEL))
+ else:
+    gman_net.load_state_dict(torch.load(PATH_TO_MODEL, map_location='cpu'))
+```
+
+
 
 <h2>Citation</h2>
 
