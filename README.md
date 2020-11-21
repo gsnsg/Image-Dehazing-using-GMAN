@@ -2,6 +2,16 @@
 PyTorch implementation of <b>Single Image Dehazing with a Generic Model-Agnostic Convolutional Neural Network</b>
 
 
+<h2>Training</h2>
+<ol>
+   <li>Used 224x224 randomly cropped images as suggested in the paper </li>
+   <li>Used Mean Squared Loss to train the model</li>
+</ol>
+
+<h3>Note:</h3>
+
+
+
 <h2>Validation Images</h2>
 
 <img src="demo_1.png"/>
