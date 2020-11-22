@@ -9,7 +9,7 @@ PyTorch implementation of <b>Single Image Dehazing with a Generic Model-Agnostic
 </ol>
 
 <h3>Note:</h3>
-<p>The model currently works with only 224x224 images. Will look into this issue later 🙂</p>
+<p>The model currently works with only 224x224 images. Will look into this issue later 😔</p>
 
 
 <h2>Validation Images</h2>
