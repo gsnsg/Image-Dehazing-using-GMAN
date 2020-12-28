@@ -46,7 +46,7 @@ PATH_TO_MODEL = '../../state_dict_model.pt'
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 gman_net = GMAN().to(device)
-if if torch.cuda.is_available():
+if torch.cuda.is_available():
     gman_net.load_state_dict(torch.load(PATH_TO_MODEL))
  else:
     gman_net.load_state_dict(torch.load(PATH_TO_MODEL, map_location='cpu'))
